@@ -5,7 +5,7 @@
 nav {
   display: flex;
   justify-content: flex-end;
-  background: royalblue;
+  background: rgb(29, 24, 89);
   padding-right: 3%;
   height: 6vh;
 
@@ -50,7 +50,9 @@ footer {
 }
 
 .main {
+  position: relative;
   flex: 1;
+  overflow: hidden;
 }
 
 .home {
@@ -68,11 +70,16 @@ footer {
 }
 
 .contact {
-  background: limegreen;
-  height: 25vh;
+  background: rgb(231, 189, 130);
+  height: 45vh;
   width: 15vw;
+  position: absolute;
+  right: 0;
+  transition: all 400ms;
 
   p {
     margin: 0;
+    color: rgb(38, 80, 73);
+    font-size: 24px;
   }
 }

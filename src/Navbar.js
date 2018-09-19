@@ -12,7 +12,7 @@ class Navbar extends Component {
         <ul>
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/blog'>Blog</Link></li>
-          <li><a>Contact</a></li>
+          <li><a onClick={this.props.slideContact}>Contact</a></li>
         </ul>
       </nav>
     )

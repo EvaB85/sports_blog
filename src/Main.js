@@ -12,7 +12,7 @@ class Main extends Component {
   render() {
     return (
       <div className='main'>
-        <Contact />
+        <Contact contactOpen={this.props.contactOpen} />
         <Route exact path='/' component={Home} />
       </div>
     )

@@ -6,8 +6,9 @@ class Contact extends Component {
   }
 
   render() {
+    let contactStyle = this.props.contactOpen ? styles.in : styles.out;
     return (
-      <div className='contact'>
+      <div style={contactStyle} className='contact'>
         <p>email@sports.com</p>
         <p>(c) 929-232-3456</p>
         <p>twitter icon</p>
@@ -15,6 +16,15 @@ class Contact extends Component {
         <p>insta icon</p>
       </div>
     )
+  }
+}
+
+const styles = {
+  in: {
+    transform: 'translateX(0)'
+  },
+  out: {
+    transform: 'translateX(15vw)'
   }
 }
 
