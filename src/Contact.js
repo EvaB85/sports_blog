@@ -6,7 +6,7 @@ class Contact extends Component {
   }
 
   render() {
-    let contactStyle = this.props.contactOpen ? styles.in : styles.out;
+    let contactStyle = this.props.contactOpen ? styles.open : styles.close;
     return (
       <div style={contactStyle} className='contact'>
         <p>email@sports.com</p>
@@ -20,11 +20,13 @@ class Contact extends Component {
 }
 
 const styles = {
-  in: {
-    transform: 'translateX(0)'
+  open: {
+    transform: 'translateX(0)',
+    boxShadow: '-5px 0 1em rgba(255,105,180,.5)'
   },
-  out: {
-    transform: 'translateX(15vw)'
+  close: {
+    transform: 'translateX(15vw)',
+    boxShadow: 'none'
   }
 }
 
