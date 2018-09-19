@@ -1,13 +1,19 @@
 // html {
 //   background: black;
 // }
+$orange: rgb(255, 133, 62);
+$grayblue: rgb(34, 52, 73);
+
+body * {
+  box-sizing: border-box;
+}
 
 nav {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-end;
-  background: rgb(29, 24, 89);
+  background: $grayblue;
   padding-right: 3%;
-  height: 6vh;
+  height: 8vh;
 
   ul {
     display: flex;
@@ -23,19 +29,27 @@ li {
   align-items: center;
   list-style: none;
   height: 100%;
-  background: lightblue;
   padding: 0 2%;
 
   a {
     text-decoration: none;
-    color: white;
+    color: $orange;
     font-size: 20px;
   }
 }
 
+header {
+  display: flex;
+  width: 100vw;
+  background: $grayblue;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
 footer {
-  background: black;
-  color: white;
+  background: $orange;
+  color: rgb(34, 52, 73);
   height: 10vh;
 
   h1 {
@@ -58,7 +72,7 @@ footer {
 .home {
 
   &__hero {
-    background-image: url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=10794df94c2543bee8f590b3681452c7&auto=format&fit=crop&w=1350&q=80");
+    background-image: url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2947e07204f39c53306ba5c303d689c7&auto=format&fit=crop&w=2250&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -82,4 +96,15 @@ footer {
     color: rgb(38, 80, 73);
     font-size: 24px;
   }
+}
+
+.home__hero {
+  color: white;
+}
+
+//HELP from Scott
+.app-name {
+  text-align: left;
+  margin: 0;
+  display: inline-block;
 }
