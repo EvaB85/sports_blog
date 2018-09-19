@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Home from './Home';
+import Contact from './Contact';
+
 
 class Main extends Component {
   constructor(props) {
@@ -10,6 +12,7 @@ class Main extends Component {
   render() {
     return (
       <div className='main'>
+        <Contact />
         <Route exact path='/' component={Home} />
       </div>
     )
