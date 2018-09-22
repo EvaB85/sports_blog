@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import axios from 'axios';
+
 
 class Login extends Component {
   constructor(props) {
@@ -34,15 +36,19 @@ class Login extends Component {
   }
 
   render() {
-    return(
-      <form className='login-form' onSubmit={this.handleSubmit}>
-        Email: <input type='text' value={this.state.email} onChange={this.handleEmailChange} />
-        <br />
-        Password: <input type='text' value={this.state.password} onChange={this.handlePasswordChange} />
-        <br />
-        <input type='submit' value='Log In!' />
-      </form>
-    )
+    if (this.props.user) {
+      return <Redirect to='/blog' />
+    } else {
+      return(
+        <form className='login-form' onSubmit={this.handleSubmit}>
+          Email: <input type='text' value={this.state.email} onChange={this.handleEmailChange} />
+          <br />
+          Password: <input type='text' value={this.state.password} onChange={this.handlePasswordChange} />
+          <br />
+          <input type='submit' value='Log In!' />
+        </form>
+      )
+    }
   }
 
 }

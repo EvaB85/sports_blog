@@ -17,6 +17,12 @@ class Blog extends Component {
     })
   }
 
+  deleteBlog = (id) => {
+    axios.delete('/blog/delete', { data: {id} }).then( result => {
+      this.updateBlogs();
+    });
+  }
+
   componentDidMount() {
     this.updateBlogs();
   }
@@ -34,7 +40,7 @@ class Blog extends Component {
         <div key={key}>
           <h1>{blog.title}</h1>
           <p>{blog.content}</p>
-          <button>Delete</button>
+          <button onClick={() => this.deleteBlog(blog._id)}>Delete</button>
           <hr />
         </div>
       )
@@ -43,36 +49,6 @@ class Blog extends Component {
         <div>
           {showCreate}
           {blogs}
-          <div className='wrap-container'>
-            <div className="wrap">
-              <button>
-                <i className="fas fa-angle-left"></i>
-              </button>
-                <div className="scroller">
-                  <ul className="items">
-                    <li className="item">Blog ONE</li>
-                    <li className="item">Blog TWO</li>
-                    <li className="item" >Blog THREE</li>
-                  </ul>
-                </div>
-                <button>
-                  <i className="fas fa-angle-right"></i>
-                </button>
-              </div>
-          </div>
-          <div className='container'>
-            <div className='container__box-one'>
-              <p>This is the first box of info</p>
-            </div>
-
-            <div className='container__box-two'>
-              <p>This is the SECOND box of info</p>
-            </div>
-
-            <div className='container__box-three'>
-              <p>This is the third box of info</p>
-            </div>
-          </div>
         </div>
     )
   }

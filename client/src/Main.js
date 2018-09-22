@@ -17,7 +17,7 @@ class Main extends Component {
         <Contact contactOpen={this.props.contactOpen} />
         <Route exact path='/' component={Home} />
         <Route path='/login-signup' render={() =>
-          <LoginSignupPage liftToken={this.props.liftToken} />
+          <LoginSignupPage user={this.props.user} liftToken={this.props.liftToken} />
         } />
         <Route path='/blog' render={() =>
           <Blog user={this.props.user} />

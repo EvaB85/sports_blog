@@ -38,7 +38,7 @@ class App extends Component {
      localStorage.removeItem('sports_blog_token')
      this.setState({
        token: '',
-       user: {}
+       user: null
      })
    } else {
      axios.post('/auth/me/from/token', {
@@ -57,7 +57,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Navbar logout={this.logout} slideContact={this.slideContact} />
+          <Navbar user={this.state.user} logout={this.logout} slideContact={this.slideContact} />
           <Main
             user={this.state.user}
             liftToken={this.liftTokenToState}

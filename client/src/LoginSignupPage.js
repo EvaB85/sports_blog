@@ -10,8 +10,8 @@ class LoginSignPage extends Component {
   render() {
     return (
         <div>
-          <Signup liftToken={this.props.liftToken} />
-          <Login liftToken={this.props.liftToken} />
+          <Signup user={this.props.user} liftToken={this.props.liftToken} />
+          <Login user={this.props.user} liftToken={this.props.liftToken} />
         </div>
     )
   }
