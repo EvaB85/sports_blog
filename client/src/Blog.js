@@ -29,19 +29,20 @@ class Blog extends Component {
 
   render() {
     let showCreate = '';
+    let btn = () => '';
     if (this.props.user) {
       showCreate = <CreateBlogPost
                       updateBlogs={this.updateBlogs}
                       user={this.props.user}
                    /> ;
+      btn = (post) => <button onClick={() => this.deleteBlog(post._id)}>Delete</button>
     }
     let blogs = this.state.blogs ? this.state.blogs.slice(0).reverse().map( (blog, key) => {
       return (
-        <div key={key}>
+        <div className='blog-container' key={key}>
           <h1>{blog.title}</h1>
           <p>{blog.content}</p>
-          <button onClick={() => this.deleteBlog(blog._id)}>Delete</button>
-          <hr />
+          {btn(blog)}
         </div>
       )
     }) : '';

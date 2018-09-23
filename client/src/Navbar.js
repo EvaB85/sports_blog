@@ -15,8 +15,8 @@ class Navbar extends Component {
             <ul>
               <li><Link to='/'>Home</Link></li>
               <li><Link to='/blog'>Blog</Link></li>
+              <li><a onClick={this.props.logout}>Logout</a></li>
               <li><a onClick={this.props.slideContact}>Contact</a></li>
-              <li><a onClick={this.props.logout}>Log Out</a></li>
             </ul>
           </nav>
         </header>
