@@ -9,11 +9,12 @@ class Contact extends Component {
     let contactStyle = this.props.contactOpen ? styles.open : styles.close;
     return (
       <div style={contactStyle} className='contact'>
-        <p>email@sports.com</p>
-        <p>(c) 929-232-3456</p>
-        <p>twitter icon</p>
-        <p>facebook icon</p>
-        <p>insta icon</p>
+        <h1>Contact Us</h1>
+        <p><i class="fas fa-envelope"> sports4u@sports.com</i></p>
+        <p><i class="fas fa-mobile-alt"></i> 206-123-3455</p>
+        <p><i class="fab fa-twitter-square"></i>twitter.com/sport4u</p>
+        <p><i class="fab fa-facebook-square">facebook.com/sports4u</i></p>
+        <p><i class="fab fa-instagram"></i>instagram.com/sports4u</p>
       </div>
     )
   }
@@ -22,10 +23,10 @@ class Contact extends Component {
 const styles = {
   open: {
     transform: 'translateX(0)',
-    boxShadow: '-5px 0 1em rgba(255,105,180,.5)'
+    boxShadow: '-5px 0 1em rgba(175, 162, 169, 0.8)'
   },
   close: {
-    transform: 'translateX(15vw)',
+    transform: 'translateX(18vw)',
     boxShadow: 'none'
   }
 }
