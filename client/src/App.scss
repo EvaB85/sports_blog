@@ -64,6 +64,8 @@ footer {
 
   h1 {
     margin-bottom: 0;
+    text-align: center;
+    font-size: 18px;
   }
 }
 
@@ -95,8 +97,8 @@ footer {
 
 .contact {
   background: rgb(162, 156, 147);
-  height: 45vh;
-  width: 18vw;
+  height: 48vh;
+  width: 20vw;
   position: absolute;
   right: 0;
   transition: all 400ms;
@@ -106,14 +108,15 @@ footer {
     margin: 0;
     color: rgb(38, 80, 73);
     text-align: center;
-    margin-top: .4em;
+    margin-top: .5em;
+    margin-bottom: .4em;
   }
 
   p {
     margin: 0;
     color: rgb(38, 80, 73);
     font-size: 20px;
-    padding: .5em;
+    padding: .7em;
   }
 }
 
@@ -137,7 +140,6 @@ footer {
   color: white;
   padding: 2em;
 }
-
 
 //TEEEEESSSSTTTTT
 
