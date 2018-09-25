@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import axios from 'axios';
 
@@ -37,12 +38,12 @@ class CreateBlogPost extends Component {
 
   render() {
     return(
-      <form className='signin-form' onSubmit={this.handleSubmit}>
-        Title: <input type='text' value={this.state.title} onChange={this.handleTitleChange} />
+      <form className='add-blog-form' onSubmit={this.handleSubmit}>
+        Title: <input className='add-blog-form__info add-blog-form__info--title' type='text' value={this.state.title} onChange={this.handleTitleChange} />
         <br />
-        Content: <input type='text' value={this.state.content} onChange={this.handleContentChange} />
+        Content: <input className='add-blog-form__info add-blog-form__info--content' type='text' value={this.state.content} onChange={this.handleContentChange} />
         <br />
-        <input type='submit' value='Add Post' />
+        <input className='add-blog-form__button' type='submit' value='Add Post' />
       </form>
     )
   }

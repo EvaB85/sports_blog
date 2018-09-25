@@ -147,7 +147,7 @@ footer {
 }
 
 .blog-container {
- height: 33vh;
+ min-height: 28vh;
   width: 90vw;
   border: solid .2em #ddd ;
   margin: 2em auto;
@@ -229,4 +229,25 @@ footer {
   margin-top: 4em;
   display: flex;
   justify-content: center;
+}
+
+.add-blog-form {
+  margin: 0 auto;
+  font-size: 30px;
+
+  input {
+    font-size: 18px;
+    width: 50vw;
+  }
+
+  &__info {
+
+    &--content {
+      height: 150px;
+    }
+
+    &--title {
+      height: 40px;
+    }
+  }
 }
