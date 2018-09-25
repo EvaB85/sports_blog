@@ -10,7 +10,7 @@ class Navbar extends Component {
     if (this.props.user) {
       return (
         <header>
-          <h1 className='app-name'>SPORTS BLOG</h1>
+          <h1 className='app-name'>SportsFan Blog</h1>
           <nav>
             <ul>
               <li><Link to='/'>Home</Link></li>

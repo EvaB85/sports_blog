@@ -71,8 +71,7 @@ form {
 }
 
 footer {
-  // background: $lightbluegray;
-  background: rgba(255, 133, 62, .8);
+  background: rgba(154, 149, 150, .7);
   color: rgb(34, 52, 73);
   height: 10vh;
 
@@ -217,11 +216,17 @@ textarea {
 }
 
 .signup-form {
-  background: #f4a460;
+  // background: #f4a460;
+  background: #f4d7bf;
+  border: 2px solid gray;
+  border-radius: .5em;
+  margin-bottom: 4em;
 }
 
 .login-form {
-  background: lightblue;
+  background: rgb(188, 221, 242);
+  border: 2px solid gray;
+  border-radius: .5em;
 }
 
 .login-singup-outer {
