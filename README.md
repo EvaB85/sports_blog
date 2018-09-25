@@ -61,4 +61,6 @@ Signup/login to begin reading the latest in sports. You can delete posts that ar
 
 ## Next Steps and Future Improvements
 
-Make this web application into an Android/Apple app.
+- allow users to upload photos with their blog
+- have an android/apple apple
+- add advertisements to blog page
