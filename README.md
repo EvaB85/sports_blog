@@ -38,7 +38,7 @@ Signup/login to begin reading the latest in sports. You can delete posts that ar
 - change/update design Planning
 
 ## Wire Frames
-![picture](public/images/wireframe.png)
+![picture](./client/public/images/wireframe.png)
 
 ## Routes
 
