@@ -9,7 +9,7 @@ SportsFan Blog allows you to read the latest in sports from dedicated sports fan
 [Check it out for yourself!](heroku link)
 
 ### Developers:
-###### Eva Barrett - Design, Fullstack Developer
+##### Eva Barrett - Design, Fullstack Developer
 
 About the App
 
