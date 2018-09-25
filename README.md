@@ -1,8 +1,6 @@
-# SportsFanBlog -- Find a new playlist with just one photo!
+# SportsFan Blog -The latest stories in sports
 
 #### WDI Seattle Project 5
-
-
 
 ## Project Description
 
@@ -29,24 +27,18 @@ Signup/login to begin reading the latest in sports. You can delete posts that ar
 - JWT and bcrypt
 - Sass
 
-*******************
-Contact info
-Tech used-mongo, express, react, nodejs, mongoose, sass
-Wireframes -MAKE quick
-Routes - get, post
-Database models - User and Blog
-
-
 ## Project Timeline
 
 ##### Planning
-
+- conference call with clients
+- plan out features of website
+- discuss color theme
+- draw out wireframes
+- present design ideas to clients
+- change/update design Planning
 
 ## Wire Frames
-
-
-
-
+![alt text](images/wireframe.png)
 
 ## Routes
 
