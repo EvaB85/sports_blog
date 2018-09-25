@@ -71,7 +71,8 @@ form {
 }
 
 footer {
-  background: $lightbluegray;
+  // background: $lightbluegray;
+  background: rgba(255, 133, 62, .8);
   color: rgb(34, 52, 73);
   height: 10vh;
 
@@ -80,6 +81,10 @@ footer {
     text-align: center;
     font-size: 18px;
   }
+}
+
+textarea {
+  font-size: 15px;
 }
 
 .App {
@@ -92,7 +97,8 @@ footer {
   position: relative;
   flex: 1;
   overflow: hidden;
-  // background:;
+  background-image: url('https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=39a55563c3b7c3a54a7b0b843588201e&auto=format&fit=crop&w=2100&q=80');
+  background-size: cover;
 }
 
 .home {
@@ -151,13 +157,11 @@ footer {
   width: 90vw;
   border: solid .2em #ddd ;
   margin: 2em auto;
-  background: rgb(207, 174, 137);
+  // background: rgb(207, 174, 137);
+  background: $lightgreen;
   color: teal;
   padding: 2em;
 }
-
-//TEEEEESSSSTTTTT
-
 
 .sticky{
   width: 100px;
@@ -220,11 +224,6 @@ footer {
   background: lightblue;
 }
 
-.login-signup-inner {
-  // display: flex;
-  // flex-direction: column;
-}
-
 .login-singup-outer {
   margin-top: 4em;
   display: flex;
@@ -234,20 +233,30 @@ footer {
 .add-blog-form {
   margin: 0 auto;
   font-size: 30px;
+  color: white;
 
   input {
     font-size: 18px;
-    width: 50vw;
   }
 
-  &__info {
+  &__button {
+    margin-bottom: 150px;
+  }
+
+    &__info {
+      width: 50vw;
+
 
     &--content {
       height: 150px;
     }
 
     &--title {
-      height: 40px;
+      height: 3em;
     }
   }
+}
+
+.form-container {
+  background-image: url('https://images.unsplash.com/photo-1522778526097-ce0a22ceb253?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=55e2eeba9aa8f58acb55fc212a217a41&auto=format&fit=crop&w=2250&q=80');
 }

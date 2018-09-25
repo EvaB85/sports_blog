@@ -38,13 +38,15 @@ class CreateBlogPost extends Component {
 
   render() {
     return(
-      <form className='add-blog-form' onSubmit={this.handleSubmit}>
-        Title: <input className='add-blog-form__info add-blog-form__info--title' type='text' value={this.state.title} onChange={this.handleTitleChange} />
-        <br />
-        Content: <input className='add-blog-form__info add-blog-form__info--content' type='text' value={this.state.content} onChange={this.handleContentChange} />
-        <br />
-        <input className='add-blog-form__button' type='submit' value='Add Post' />
-      </form>
+      <div className='form-container'>
+        <form className='add-blog-form' onSubmit={this.handleSubmit}>
+          Title: <input className='add-blog-form__info add-blog-form__info--title' type='text' value={this.state.title} onChange={this.handleTitleChange} />
+          <br />
+          Content: <textarea className='add-blog-form__info add-blog-form__info--content' value={this.state.content} onChange={this.handleContentChange}></textarea>
+          <br />
+          <input className='add-blog-form__button' type='submit' value='Add Post' />
+        </form>
+      </div>
     )
   }
 
